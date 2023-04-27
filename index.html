@@ -1,60 +1,175 @@
 <!DOCTYPE html>
 <html>
-<head>
-	<title>My Presentation</title>
-	<link rel="stylesheet" type="text/css" href="style.css">
-</head>
-<body>
-	<header>
-		<h1>Welcome to My Presentation</h1>
-	</header>
-	<nav>
-		<ul>
-			<li><a href="#page1">Page 1</a></li>
-			<li><a href="#page2">Page 2</a></li>
-			<li><a href="#page3">Page 3</a></li>
-			<li><a href="#page4">Page 4</a></li>
-			<li><a href="#page5">Page 5</a></li>
-		</ul>
-	</nav>
-	<main>
-		<section id="header">
-			<h2>Page Header</h2>
-			<p>This is the content of the header page.</p>
-		</section>
-		<section id="page1">
-			<h2>Page 1</h2>
-			<p>This is the content of the first page.</p>
-			<iframe width="100%" height="1111" frameborder="0"
-  src="https://observablehq.com/embed/@zhenghao-lin/rental-decision-maker-in-bay-area@787?cells=viewof+filter1%2Cchart1"></iframe>
-        </main>
-		</section>
-		<section id="page2">
-			<h2>Page 2</h2>
-			<p>This is the content of the second page.</p>
-			<iframe width="100%" height="1352" frameborder="0"
-  src="https://observablehq.com/embed/@zhenghao-lin/rental-decision-maker-in-bay-area@787?cells=viewof+filter2%2Cchart2"></iframe>
-		</section>
-		<section id="page3">
-			<h2>Page 3</h2>
-			<p>This is the content of the third page.</p>
-			<iframe width="100%" height="1003" frameborder="0"
-  src="https://observablehq.com/embed/@zhenghao-lin/rental-decision-maker-in-bay-area@787?cells=viewof+filter3%2Cchart3"></iframe>
-		</section>
-		<section id="page4">
-			<h2>Page 4</h2>
-			<p>This is the content of the fourth page.</p>
-			<iframe width="100%" height="757" frameborder="0"
-  src="https://observablehq.com/embed/@zhenghao-lin/rental-decision-maker-in-bay-area@787?cells=viewof+filter4%2Cchart4"></iframe>
-		 </section>
-		 <section id="page5">
-			<h2>Page 5</h2>
-			<p>This is the content of the fifth page.</p>
-			<iframe width="100%" height="761" frameborder="0"
-  src="https://observablehq.com/embed/@zhenghao-lin/rental-decision-maker-in-bay-area@787?cells=viewof+filter5%2CAverage_Rent%2CAverage_Selling_Price%2CCost_Effectiveness%2CBART_Station_Number%2CMedian_Household_Income%2Cchart5"></iframe>
-		 </section>
-	<footer>
-		<p>All rights reserved &copy; 2023 Zhenghao Lin</p>
-	</footer>
-</body>
+  <head>
+    <title>Welcome to Rental Decision Maker in SF Bay Area</title>
+    <script src="https://cdn.jsdelivr.net/npm/marked@3.0.7/marked.min.js"></script>
+    <script src="/index.js"></script>
+    <link rel="stylesheet" type="text/css" href="style.css" />
+  </head>
+  <body>
+    <header>
+      <h1>Welcome to Rental Decision Maker in SF Bay Area</h1>
+    </header>
+    <nav>
+      <ul>
+        <li><a href="#page1">Rent Map</a></li>
+        <li>
+          <a href="#page2">Cost Effectiveness Map</a>
+        </li>
+        <li><a href="#page3">Top Recommendations Map</a></li>
+        <li><a href="#page4">Population Proportion Piechart</a></li>
+        <li><a href="#page5">Zipcode Details</a></li>
+      </ul>
+    </nav>
+    <main>
+      <section id="header">
+        <div id="markdown-container0"></div>
+      </section>
+      <section id="page1">
+        <div id="markdown-container1"></div>
+        <iframe
+          width="100%"
+          height="1111"
+          frameborder="0"
+          src="https://observablehq.com/embed/@zhenghao-lin/rental-decision-maker-in-bay-area@797?cells=viewof+filter1%2Cchart1"
+        ></iframe>
+      </section>
+      <section id="page2">
+        <div id="markdown-container2"></div>
+        <iframe
+          width="100%"
+          height="1352"
+          frameborder="0"
+          src="https://observablehq.com/embed/@zhenghao-lin/rental-decision-maker-in-bay-area@797?cells=viewof+filter2%2Cchart2"
+        ></iframe>
+      </section>
+      <section id="page3">
+        <div id="markdown-container3"></div>
+        <iframe
+          width="100%"
+          height="1003"
+          frameborder="0"
+          src="https://observablehq.com/embed/@zhenghao-lin/rental-decision-maker-in-bay-area@797?cells=viewof+filter3%2Cchart3"
+        ></iframe>
+      </section>
+      <section id="page4">
+        <div id="markdown-container4"></div>
+        <iframe
+          width="100%"
+          height="757"
+          frameborder="0"
+          src="https://observablehq.com/embed/@zhenghao-lin/rental-decision-maker-in-bay-area@797?cells=viewof+filter4%2Cchart4"
+        ></iframe>
+      </section>
+      <section id="page5">
+        <div id="markdown-container5"></div>
+        <iframe
+          width="100%"
+          height="761"
+          frameborder="0"
+          src="https://observablehq.com/embed/@zhenghao-lin/rental-decision-maker-in-bay-area@797?cells=viewof+filter5%2CAverage_Rent%2CAverage_Selling_Price%2CCost_Effectiveness%2CBART_Station_Number%2CMedian_Household_Income%2Cchart5"
+        ></iframe>
+      </section>
+    </main>
+    <footer>
+      <p>All rights reserved &copy; 2023 Zhenghao Lin</p>
+    </footer>
+  </body>
+  <script>
+    const markdownText0 = `
+## Introduction\n
+* Rental Decision Maker in SF Bay Area is an interactive visualization tool designed to help renters in the San Francisco Bay Area choose which zip code area to rent in. With this tool, users can explore rental information such as rent distribution, cost-effectiveness distribution, and recommended areas, among others. By visualizing data and providing insights, the tool helps users make more informed decisions about where to rent.  \n
+* An example conclusion you can get from this decision make can be:\n
+  * For a tenant who prefers to live in the western or southern part of the SF Bay Area, has a comparatively low budget and is not reliant on public transportation, the best choice for renting a new home is zip code 94010. This area has a relatively affordable rent price (close to the Bay Area average), no public transportation (which implies better safety), great median local household income (TOP 15%), and great housing conditions (with TOP 3% average selling price).\n
+-----
+## Usage & Workflow\n
+1. If you have no idea about the housing market in the Bay Area. Please use the piechart (chart 4) first to find a reasonable expectation for average rent.\n
+2. After you have a basic understanding of the reasonable value range of each attribute, use chart 1 to see the rent distribution in the Bay Area.\n
+3. Along with chart 2, use chart 3, the cost-effectiveness distribution to identify whether an area is recommended based on your constraints.\n
+4. Use chart 4 to get a more clear recommendation by limiting how many of recommendations you want to see on the map.\n
+5. After you have some zip codes in which you are interested, use chart 5 to take a further look at its detail to make the final comprehensive decision.\n
+`;
+    const markdownText1 = `
+### Chart 1: Rent Distribution Map With Customizable Limitations\n
+-----\n
+Purpose:\n
+- Display the rental distribution map of the Bay Area according to the given constraints.\n
+- An example conclusion you may derive from this visualization:\n
+	- In the Bay Area, among areas with XXXXX public transportation and a minimum median annual household income of XXXXX, zip code XXXXX is the most XXXXX one for tenants.\n
+Usage:\n
+1. Set the filter.\n
+2. Set the color.\n
+3. View the rent distribution map, where color depth represents the value of the rent.\n
+4. Hover the mouse over the map to view the zip code of each specific zip area. You can zoom in and out of the map using the mouse scroll wheel.\n
+`;
+    const markdownText2 = `
+-----\n
+### Chart  2: Cost Effectiveness (Price-to-Rent Ratio) Distribution Map With Customizable Limitations\n
+-----\n
+Purpose:\n
+- Display the cost-effectiveness distribution map of the Bay Area according to the given constraints.\n
+- An example conclusion you may derive from this visualization:\n
+	- In the Bay Area, among areas with XXXXX public transportation accessibility, median annual household income, rent range, and selling price range, zip code XXXXX has the XXXXX cost-effectiveness for tenants.\n
+Usage:\n
+1. Set the filter.\n
+2. Set the color.\n
+3. View the cost-effectiveness (ratio of selling price to rent ) distribution map, where color depth represents the value of the cost-effectiveness.\n
+4. Hover the mouse over the map to view the zip code of each specific zip area. You can zoom in and out of the map using the mouse scroll wheel.\n
+`;
+    const markdownText3 = `
+-----\n
+### Chart 3: Top Recommendations Distribution Based On Given Condition\n
+-----\n
+Purpose:\n
+- Display the most recommended areas distribution map of the Bay Area according to the given focus.\n
+- An example conclusion you may derive from this visualization:\n
+	- In the Bay Area, for tenants who care most about XXXXX, zip code XXXXX, XXXXX, XXXXX, XXXXX, XXXXX are the best XXXXX choices.\n
+Usage:\n
+1. Set the variables you are most concerned about.\n
+2. Set the number of Top recommendations you want to view.\n
+3. View the distribution map of recommended locations, where color depth represents the magnitude of the variables you are concerned about.\n
+4. Hover the mouse over the map to view the zip code of each specific zip area. You can zoom in and out of the map using the mouse scroll wheel.\n
+`;
+    const markdownText4 = `
+-----\n
+### Chart 4: Population Ratio Of Two Parts Divided By Given Condition\n
+-----\n
+Purpose:\n
+- Display the population proportion in zip areas lower and higher than the given condition.\n
+- Please use this Piechart to instruct you find the reasonable value for setting the filters in the previous three charts.\n
+- An example conclusion you may derive from this visualization:\n
+	- For tenants in the Bay Area, XXXXX is an too-low/high XXXXX for XXXXX, while XXXXX is a more reasonable XXXXX.\n
+Usage:\n
+1. Set the variables you are most concerned about.\n
+2. Try entering the expected value.\n
+3. Determine whether your expectations are reasonable based on the pie chart. The blue and red sections represent the proportion of people, where blue represents the population residing in zip areas that are below the conditions you have set, and red represents the population residing in zip areas that are above the conditions you have set.\n
+`;
+    const markdownText5 = `
+-----\n
+### Chart  5: Attributes Details of Target Zip Area\n
+-----\n
+Purpose:\n
+- Display the details of a specific zip area from all aspects.\n
+- The smaller percentage means ranked higher.\n
+- An example conclusion you may derive from this visualization:\n
+	- In the Bay Area, the zip code area XXXXX has the advantage of XXXXX and the disadvantage of XXXXX among all areas.\n
+Usage:\n
+1. Select the zip code you are interested in from the dropdown menu.\n
+2. View the rankings of each attribute for that zip code. The percentage represents the ranking of the zip code in terms of that particular attribute among all zip areas. If extreme values such as 0% appear, it may be due to a lack of data.\n
+`;
+
+    const htmlText0 = marked(markdownText0.toString());
+    const htmlText1 = marked(markdownText1.toString());
+    const htmlText2 = marked(markdownText2.toString());
+    const htmlText3 = marked(markdownText3.toString());
+    const htmlText4 = marked(markdownText4.toString());
+    const htmlText5 = marked(markdownText5.toString());
+
+    document.getElementById("markdown-container0").innerHTML = htmlText0;
+    document.getElementById("markdown-container1").innerHTML = htmlText1;
+    document.getElementById("markdown-container2").innerHTML = htmlText2;
+    document.getElementById("markdown-container3").innerHTML = htmlText3;
+    document.getElementById("markdown-container4").innerHTML = htmlText4;
+    document.getElementById("markdown-container5").innerHTML = htmlText5;
+  </script>
 </html>
